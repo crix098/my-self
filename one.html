@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      size: 100px;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      background-image: url(bl.jfif);
+      background-size: 110%;
+      object-fit: cover;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 50px;
+    }
+    .octagon-container {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin-top: 20px;
+      display: inline-block;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    }
+    .octagon img {
+      width: 20%;
+      height: 10%;
+      object-fit: cover; /* Ensures the image covers the entire octagon */
+      clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    }
+    
+    .button-group {
+      margin-top: 18px;
+    }
+    .button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #fcfcfc;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none; /* Remove underline */
+      position: relative;
+    }
+    .button:hover .info {
+      display: block;
+    }
+    .info {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .social-links {
+      margin-top: 10px;
+    }
+    .social-link {
+      margin-right: 7px;
+    }
+    .social-link img 
+    {
+      width: 50px; /* Adjust the width of the logos */
+      height: 50px; /* Adjust the height of the logos */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My self!</h1>
+    <div class="octagon">
+        <img src="james.jpg" alt="Image">
+    </div>
+    <div class="button-group">
+        <a href="file:///C:/Users/Admin/Desktop/about%20me/aboutme.html" class="button">About Me<span class="info">Information About Me </span></a>
+        <a href="file:///C:/Users/Admin/Desktop/achievements/family.html" class="button">My Family<span class="info">Information about My Family </span></a>
+        <a href="file:///C:/Users/Admin/Desktop/dreams/dreams.html" class="button">My Dreams<span class="info">Information about My Dreams </span></a>
+      </div>
+    <div class="social-links">
+      <p>Contact me here:</p>
+      <a href="https://www.facebook.com/james.gerafil/" class="social-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/240px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/james_roui/" class="social-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/240px-Instagram_icon.png" alt="Instagram"></a>
+    </div>
+  </div>
+</body>
+</html>
